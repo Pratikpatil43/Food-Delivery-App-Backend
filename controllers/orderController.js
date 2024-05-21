@@ -49,10 +49,10 @@ const placeOrder = async (req, res) => {
             cancel_url: `${frontend_url}/verify?success=false&orderId=${newOrder._id}`
         });
 
-        res.json({ success: true, session_url: session.url });
+        alert({ success: true, session_url: session.url });
     } catch (error) {
         console.log(error);
-        res.json({ success: false, message: "Error" });
+        alert({ success: false, message: "Error" });
     }
 }
 
@@ -61,17 +61,17 @@ const verifyOrder = async (req,res) =>{
     try{
         if(success==="true"){
             await orderModel.findByIdAndUpdate(orderId,{payment:true});
-            res.json({success:true,message:"Paid"})
+            alert({success:true,message:"Paid"})
         }
         else{
             await orderModel.findByIdAndUpdate(orderId);
-            res.json({success:false,message:"Not Paid"})
+            alert({success:false,message:"Not Paid"})
         }
            
         }catch(error){
             console.log(error)
 
-            res.json({success:false,message:"Error"})
+            alert({success:false,message:"Error"})
         }
     }
 
@@ -80,11 +80,11 @@ const verifyOrder = async (req,res) =>{
 const userOrders = async (req,res) =>{
     try{
         const orders = await orderModel.find({userId:req.body.userId})
-        res.json({success:true,data:orders})
+        alert({success:true,data:orders})
 
     }catch(error){
         console.log(error)
-        res.json({success:false,message:"Error"})
+        alert({success:false,message:"Error"})
 
     }
 
