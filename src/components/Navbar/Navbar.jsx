@@ -36,7 +36,7 @@ const Navbar = ({ setShowLogin }) => {
                         <ul className='navbar-profile-dropdown'>
                             <li onClick={() => navigate('/myorder')}><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
                             <hr />
-                            <li><a href="http://localhost:5174/"><img src={assets.profile_icon} alt="" /><p>Admin Panel</p></a></li>
+                            <li><a href="https://fooddeliveryapp-admin.vercel.app/"><img src={assets.profile_icon} alt="" /><p>Admin Panel</p></a></li>
                             <hr />
                             <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
                         </ul>
