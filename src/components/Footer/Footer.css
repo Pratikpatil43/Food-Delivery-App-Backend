@@ -47,6 +47,10 @@
     border: none;
 }
 
+.footer-content-left img{
+    width: 150px;
+}
+
 
 @media(max-width:750px){
     .footer-content{

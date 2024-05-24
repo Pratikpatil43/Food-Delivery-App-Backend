@@ -5,7 +5,7 @@ import { assets } from '../../assets/assets'
 const AppDownload = () => {
   return (
     <div className='app-download' id='app-download'>
-        <p>For Better Experice Download App</p>
+        <p>For Better Experience our App will be launching Soon..Stay tune</p>
         <div className="app-download-platform">
             <img src={assets.play_store} alt="" />
             <img src={assets.app_store} alt="" />

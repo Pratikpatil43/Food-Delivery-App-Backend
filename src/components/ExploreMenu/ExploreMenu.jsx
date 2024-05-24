@@ -7,8 +7,8 @@ const ExploreMenu = () => {
     const [category, setCategory] = useState("")
   return (
     <div className='explore-menu' id='explore-menu'>
-        <h1>Explore our Menu</h1>
-        <p>Choose from a diverse Menu featuring a delectable array of menus</p>
+        <h1>Explore our Mobile Phones</h1>
+        <p>Choose your Mobile Phones in the Karnataka in cheapest Price</p>
         <div className="explore-menu-list">
             {menu_list.map((item,index)=>{
                 return (

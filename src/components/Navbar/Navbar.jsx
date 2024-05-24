@@ -17,7 +17,8 @@ const Navbar = ({ setShowLogin }) => {
 
     return (
         <div className='navbar'>
-            <Link to='/'><img src={assets.logo} alt="" className="logo" /></Link>
+           
+            <Link to='/'><img src={assets.shop_logo} alt="" className="pixel" /></Link>
             <ul className="navbar-menu">
                 <Link to='/' onClick={() => setMenu("Home")} className={menu === "Home" ? "active" : ""}>Home</Link>
                 <a href='#explore-menu' onClick={() => setMenu("Menu")} className={menu === "Menu" ? "active" : ""}>Menu</a>
@@ -36,8 +37,8 @@ const Navbar = ({ setShowLogin }) => {
                         <ul className='navbar-profile-dropdown'>
                             <li onClick={() => navigate('/myorder')}><img src={assets.bag_icon} alt="" /><p>Orders</p></li>
                             <hr />
-                            <li><a href="https://fooddeliveryapp-admin.vercel.app/"><img src={assets.profile_icon} alt="" /><p>Admin Panel</p></a></li>
-                            <hr />
+                            {/* <li><a href="https://fooddeliveryapp-admin.vercel.app/"><img src={assets.profile_icon} alt="" /><p>Admin Panel</p></a></li> */}
+                            {/* <hr /> */}
                             <li onClick={logout}><img src={assets.logout_icon} alt="" /><p>Logout</p></li>
                         </ul>
                     </div>}

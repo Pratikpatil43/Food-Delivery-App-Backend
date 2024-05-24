@@ -59,8 +59,25 @@ import profile_icon from './profile_icon.png'
 import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
+import iphone_1 from './iphone_1.png'
+import iphone_2 from './iphone_2.png'
+import iphone_3 from './iphone_3.png'
+import iphone_4 from './iphone_4.png'
+import ipad_1 from './ipad_1.png'
+import mac_1 from './mac_1.png'
+import samsung_1 from './samsung_1.png'
+import pixel from './pixel.png'
+import shop_logo from './shop_logo.png'
+
 
 export const assets = {
+    samsung_1,
+    mac_1,
+    ipad_1,
+    iphone_4,
+    iphone_3,
+    iphone_2,
+    iphone_1,
     logo,
     basket_icon,
     header_img,
@@ -79,41 +96,67 @@ export const assets = {
     profile_icon,
     logout_icon,
     bag_icon,
-    parcel_icon
+    parcel_icon,
+    pixel,
+    shop_logo
 }
 
 export const menu_list = [
+    // {
+    //     menu_name: "Salad",
+    //     menu_image: menu_1
+    // },
+    // {
+    //     menu_name: "Rolls",
+    //     menu_image: menu_2
+    // },
+    // {
+    //     menu_name: "Deserts",
+    //     menu_image: menu_3
+    // },
+    // {
+    //     menu_name: "Sandwich",
+    //     menu_image: menu_4
+    // },
+    // {
+    //     menu_name: "Cake",
+    //     menu_image: menu_5
+    // },
+    // {
+    //     menu_name: "Pure Veg",
+    //     menu_image: menu_6
+    // },
+    // {
+    //     menu_name: "Pasta",
+    //     menu_image: menu_7
+    // },
+    // {
+    //     menu_name: "Noodles",
+    //     menu_image: menu_8
+    // },
     {
-        menu_name: "Salad",
-        menu_image: menu_1
+        menu_name: "Iphone 13",
+        menu_image: iphone_1
     },
     {
-        menu_name: "Rolls",
-        menu_image: menu_2
+        menu_name: "Iphone 13 pro max",
+        menu_image: iphone_2
     },
     {
-        menu_name: "Deserts",
-        menu_image: menu_3
+        menu_name: "Iphone 14",
+        menu_image: iphone_3
     },
     {
-        menu_name: "Sandwich",
-        menu_image: menu_4
+        menu_name: "Iphone 14 pro max",
+        menu_image: iphone_4
     },
     {
-        menu_name: "Cake",
-        menu_image: menu_5
+        menu_name: "Ipad Pro",
+        menu_image: ipad_1
     },
     {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
+        menu_name: "Samsung s22 ultra",
+        menu_image: samsung_1
     }]
 
 export const food_list = [
@@ -347,4 +390,5 @@ export const food_list = [
         description: "Food provides essential nutrients for overall health and well-being",
         category: "Noodles"
     }
+    
 ]

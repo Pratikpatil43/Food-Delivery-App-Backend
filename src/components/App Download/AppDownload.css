@@ -23,3 +23,8 @@
 .app-download-platform img:hover{
     transform: scale(1.05);
 }
+
+.app-download p{
+    color: red;
+    font-size: larger;
+}
