@@ -9,7 +9,7 @@ export const StoreContextProvider = (props) => {
 
     const [cartItems,setCartItems] = useState({});
     const [price, setPrice] = useState(0); // Initialize price with a default value, e.g., 0
-    const url = "http://localhost:4000"
+    const url = "https://food-delivery-app-backend-wjzk.onrender.com"
     const [token,setToken] = useState("");
     const [food_list,setFoodList] = useState([])
 
