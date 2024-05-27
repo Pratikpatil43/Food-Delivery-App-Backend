@@ -52,7 +52,7 @@ const removeFood = async (req,res) =>{
 
     }catch(error){
         console.log(error);
-        removeFood.json({success:false,message:"Error"})
+        res.json({success:false,message:"Error"})
 
     }
 
